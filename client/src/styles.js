@@ -24,6 +24,8 @@ export const ImageStyled = styled.div`
     width: 100%;
     height: 80vh;
     object-fit: cover;
+    border: none;
+    border-radius: 50%;
   }
 `;
 

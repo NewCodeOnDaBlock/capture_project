@@ -1,22 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import logo from '../assets/REEL.png';
 
 const Nav = () => {
   return (
     <NavStyled>
-      <h1 id='logo'>
-        <a href="_">Capture</a>
-      </h1>
+      <img id='logo' src={logo} alt='logo' />
       <ul>
         <li>
-          <a href="_">1. About Us</a>
+          <a href="_">About Us</a>
         </li>
         <li>
-          <a href="_">2. Our Work</a>
+          <a href="_">Our Work</a>
         </li>
         <li>
-          <a href="_">3. Contact Us</a>
+          <a href="_">Contact Us</a>
         </li>
       </ul>
     </NavStyled>
@@ -31,10 +29,16 @@ justify-content: space-between;
 align-items: center;
 padding: 1rem 10rem;
 background: #282828;
+box-shadow: 1px 1px 10px #0000009b;
 a{
   color: white;
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  transition: all 0.5s ease;
+  &:hover {
+    cursor: pointer;
+    color: #23d997;
+  }
 }
 ul {
   display: flex;
@@ -44,10 +48,9 @@ li{
   padding-left: 2rem;
   position: relative;
 }
-#logo{
-  font-size: 1.5rem;
-  font-family: 'Lobster', cursive;
-  font-weight: lighter;
+img{
+  width: 6rem;
+  height: 6rem;
 }
 `;
 
